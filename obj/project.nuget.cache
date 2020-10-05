@@ -1,0 +1,16 @@
+{
+  "version": 2,
+  "dgSpecHash": "BGG4BPO8XEJXPkPVzcFi/JdDWSRQ4umH0XffFjNKCVzQOPIvI52EIzILmCT1ba66AXyUTRySzvt/DwMnlEA1ug==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Somsubhra Mitra\\Desktop\\JS_new\\C#.NET\\Project\\Project.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Somsubhra Mitra\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
+    "C:\\Users\\Somsubhra Mitra\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",
+    "C:\\Users\\Somsubhra Mitra\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
+    "C:\\Users\\Somsubhra Mitra\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.0.0\\microsoft.extensions.dependencyinjection.abstractions.3.0.0.nupkg.sha512",
+    "C:\\Users\\Somsubhra Mitra\\.nuget\\packages\\microsoft.extensions.options\\3.0.0\\microsoft.extensions.options.3.0.0.nupkg.sha512",
+    "C:\\Users\\Somsubhra Mitra\\.nuget\\packages\\microsoft.extensions.primitives\\3.0.0\\microsoft.extensions.primitives.3.0.0.nupkg.sha512",
+    "C:\\Users\\Somsubhra Mitra\\.nuget\\packages\\system.reflection.emit\\4.7.0\\system.reflection.emit.4.7.0.nupkg.sha512"
+  ],
+  "logs": []
+}
