@@ -62,7 +62,7 @@ namespace Project.Data
  
     }
 }
-    //public ServiceResponse<Command> GetCommandById(int id){
+    //public ServiceResponse<GetCommandDto> GetCommandById(int id){
         //         ServiceResponse<CommandGetDto> ob=new ServiceResponse<Command>();
         //         Command x=null;
         //         ob.Data= _mapper.Map<GetCommandDto>(commands.FirstOrDefault(c=>c.id==id));  
@@ -79,8 +79,11 @@ namespace Project.Data
 
 
 
-    //  public ServiceResponse<List<Command>> CreateCommand(CommandCreateDto data){
+    //  public ServiceResponse<List<GetCommandDto>> CreateCommand(CommandCreateDto data){
         //     Command cmd = _mapper.Map<Command>(data);
+        //      Random r = new Random();
+        //      int random= r.Next(10,50);
+        //      cmd.Id=random;
         //      commands.Add(cmd);
         //      ServiceResponse<List<CommandGetDto>> ob=new ServiceResponse<List<CommandGetDto>>();
         //      ob.Data=commands.Select(i=>_mapper.Map<GetCommandDto>(i)).toList(); 
@@ -93,7 +96,7 @@ namespace Project.Data
 
 
 
-    //public ServiceResponse<Command> UpdateCommand(CommandUpdateDto data,int id){
+    //public ServiceResponse<GetCommandDto> UpdateCommand(CommandUpdateDto data,int id){
         //    ServiceResponse<CommandGetDto> ob=new ServiceResponse<CommandGetDto>();
         //    Comand commnd=null;
         //    try{

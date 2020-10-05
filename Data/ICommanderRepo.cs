@@ -12,9 +12,9 @@ namespace Project.Data
         Task<ServiceResponse<List<GetCommandDto>>> Getter();        
 
         
-        //ServiceResponse<List<Command>> GetAllCommands();
-       // ServiceResponse<Command> GetCommandById(int id);
-      //  ServiceResponse<List<Command>> Post(Command data)
-     //   ServiceResponse<List<Command>> Put(Command data,int id)
+        //ServiceResponse<List<GetCommandDto>> GetAllCommands();
+       // ServiceResponse<GetCommandDto> GetCommandById(int id);
+      //  ServiceResponse<List<GetCommandDto>> Post(Command data)
+     //   ServiceResponse<List<GetCommandDto>> Put(Command data,int id)
     }
 }
