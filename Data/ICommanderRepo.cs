@@ -8,13 +8,12 @@ namespace Project.Data
     public interface ICommanderRepo
     {
         List<Command> GetAllCommands();
-        Command GetCommandById(int id);
-        Task<ServiceResponse<List<GetCommandDto>>> Getter();        
+        Command GetCommandById(int id);           
 
         
-        //ServiceResponse<List<GetCommandDto>> GetAllCommands();
-       // ServiceResponse<GetCommandDto> GetCommandById(int id);
-      //  ServiceResponse<List<GetCommandDto>> Post(Command data)
-     //   ServiceResponse<List<GetCommandDto>> Put(Command data,int id)
+      Task<ServiceResponse<List<GetCommandDto>>> Getter();   
+      ServiceResponse<GetCommandDto> GetCommandDtoById(int id);
+      ServiceResponse<List<GetCommandDto>> CreateCommand(CommandCreateDto data);
+      ServiceResponse<GetCommandDto> UpdateCommand(CommandUpdateDto data,int id);
     }
 }

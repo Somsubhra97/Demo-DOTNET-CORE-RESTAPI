@@ -32,7 +32,7 @@ namespace Project.Controllers
           
         }
 
-        //GET api/commands/{id}
+       // GET api/commands/{id}
         [HttpGet("{id}", Name="GetCommandById")]
         public IActionResult GetCommandById(int id)
         {
@@ -46,41 +46,33 @@ namespace Project.Controllers
             
         }  
         [HttpGet("GetAll")]
-        public async Task<IActionResult> Getter (){
+        public async Task<IActionResult> GetAll (){
            var ob=_repository.Getter();
              Console.Write(ob);            
              return Ok(ob);
         } 
  
 
-        // [HttpPost]
-    // public IActionResult Add(commandCreateDto cmd){
+    [HttpPost]
+    public IActionResult Add(commandCreateDto cmd){
        
-        //     var ret=_repository.CreateCommand(cmd);                       
-        //     return Ok(ret);            
-        // }
+            var ret=_repository.CreateCommand(cmd);                       
+            return Ok(ret);            
+        }
     // public IActionResult Add(Command cmd){
-        //     List<Command>  ret=_repository.CreateCommand(commandModel);                       
-        //     return Ok(ret);            
-        // }
+    //         List<Command>  ret=_repository.CreateCommand(commandModel);                       
+    //         return Ok(ret);            
+    //     }
         
 
 
-        // [HttpPut("{id}")]
-    // public IActionResult Put(commandUpdateDto cmd,int id){       
-        //     var ret=_repository.UpdateCommand(cmd,id);        
-        //     if(!ret.Success){
-        //        return NotFound(ret)
-        //      }      
-        //     return Ok(ret);            
-        // }         
-    // public IActionResult Put(commandUpdateDto cmd,int id){        
-        //     Command ret=_repository.UpdateCommand(commandModel,id);        
-        //     if(ret==null){
-        //        return NotFound();
-        //      }           
-        //     return Ok(ret);
-            
-        // }            
-    }
+    [HttpPut("{id}")]
+    public IActionResult Put(commandUpdateDto cmd,int id){       
+            var ret=_repository.UpdateCommand(cmd,id);        
+            if(!ret.Success){
+               return NotFound(ret)
+             }      
+            return Ok(ret);            
+        }        
+    
 }
