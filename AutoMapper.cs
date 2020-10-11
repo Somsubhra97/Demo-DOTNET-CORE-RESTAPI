@@ -9,7 +9,8 @@ namespace Project
     {
         public AutoMapperProfile()
         {
-            CreateMap<Command, GetCommandDto>();            
+            CreateMap<Command, GetCommandDto>();   
+            CreateMap<AddCharacterDto, Character>();         
         }
     }
 }
