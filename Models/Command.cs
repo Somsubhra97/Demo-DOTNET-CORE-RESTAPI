@@ -5,7 +5,7 @@ namespace Project.Models
     public class Command
     {
         
-        public int Id { get; set; }
+        public int id { get; set; }
 
        
         public string HowTo { get; set; }

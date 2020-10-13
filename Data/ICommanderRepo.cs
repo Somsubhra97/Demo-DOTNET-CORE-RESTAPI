@@ -11,9 +11,19 @@ namespace Project.Data
         Command GetCommandById(int id);           
 
         
-      Task<ServiceResponse<List<GetCommandDto>>> Getter();   
+      Task<ServiceResponse<List<GetCommandDto>>> Getter();
+      Task<ServiceResponse<List<GetCommandDto>>> GetterDB();
+
       ServiceResponse<GetCommandDto> GetCommandDtoById(int id);
+      Task<ServiceResponse<GetCommandDto>> GetCommandByIdDB(int id);
+
       ServiceResponse<List<GetCommandDto>> CreateCommand(CommandCreateDto data);
+      Task<ServiceResponse<List<GetCommandDto>>> CreateCommandDB(CommandCreateDto data);
+
+
       ServiceResponse<GetCommandDto> UpdateCommand(CommandUpdateDto data,int id);
+      Task<ServiceResponse<GetCommandDto>> UpdateCommandDB(CommandUpdateDto data,int id);
+
+      Task<ServiceResponse<List<GetCommandDto>>> DeleteDB(int id);
     }
 }
