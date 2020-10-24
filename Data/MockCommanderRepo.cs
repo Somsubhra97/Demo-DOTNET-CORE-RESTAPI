@@ -100,7 +100,7 @@ public class MockCommanderRepo : ICommanderRepo///
          ob.Data=commands.Select(i=>_mapper.Map<GetCommandDto>(i)).toList(); 
          return ob;
     }
-    public ServiceResponse<List<GetCommandDto>> CreateCommandDB(CommandCreateDto data){
+    public Task<ServiceResponse<List<GetCommandDto>>> CreateCommandDB(CommandCreateDto data){
         ServiceResponse<List<CommandGetDto>> ob=new ServiceResponse<List<CommandGetDto>>();
         Command cmd = _mapper.Map<Command>(data);
         await _context.Commands.AddAsync(cmd);
@@ -133,7 +133,7 @@ public class MockCommanderRepo : ICommanderRepo///
        }
        return ob;          
     }
-    public ServiceResponse<GetCommandDto> UpdateCommand(CommandUpdateDto data,int id){
+    public Task<ServiceResponse<GetCommandDto>> UpdateCommandDB(CommandUpdateDto data,int id){
        ServiceResponse<CommandGetDto> ob=new ServiceResponse<CommandGetDto>();
 
        try{
